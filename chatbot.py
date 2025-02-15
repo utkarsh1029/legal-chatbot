@@ -5,11 +5,9 @@ import google.generativeai as genai
 app = Flask(__name__)
 CORS(app)
 
-# Configure Google Gemini API
-api_key = "AIzaSyAqvZ5wuoVT6M7op77FUs6zF20JEDAaDzs"  # Replace with your actual API key
+api_key = "YOUR_API_KEY"#you can enter your api key. 
 genai.configure(api_key=api_key)
 
-# Define the model
 generation_config = {
     "temperature": 0.15,
     "top_p": 0.95,
